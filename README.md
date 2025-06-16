@@ -39,3 +39,26 @@ lastly, the config.toml file should be updated to use the new theme:
 ```toml
 theme = "hextra"
 ```
+
+### Installation Hextra theme via hugo module:
+
+Official instructions for installing the Hextra theme using Hugo modules can be found [here](https://imfing.github.io/hextra/docs/getting-started/#steps).
+
+```bash
+# Initialize Hugo site
+hugo new site my-site --format=yaml
+
+# Initialize hugo module
+hugo mod init github.com/username/my-site
+
+# Add Hextra theme
+hugo mod get github.com/imfing/hextra
+```
+
+Configure the theme in `config.yaml`:
+```yaml
+module:
+  imports:
+    - path: github.com/imfing/hextra
+```
+
