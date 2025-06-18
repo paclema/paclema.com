@@ -38,7 +38,7 @@ Designed a custom control board based on ESP32 SoC including power stage, relay-
 
 [LinkedIn AccessCtrl post](https://www.linkedin.com/posts/iotiq-gmbh_accessctrl-unser-digitales-zutrittsmanagementsystem-activity-6867110761710268418-qKg9?utm_source=share&utm_medium=member_desktop&rcm=ACoAABOkcXQBXGV1XjMqaRaR42fkofhDVLb4Gek)
 
----
+
 
 #### InnoSale
 
@@ -52,7 +52,7 @@ Managed technical collaboration across a multinational consortium (Germany, Finl
 
 [InnoSale website](https://www.innosale.eu/)
 
----
+
 
 #### Light Lifting Equipment Automation
 
@@ -62,7 +62,7 @@ Managed technical collaboration across a multinational consortium (Germany, Finl
 
 Designed the system logic and communication interfaces to automate industrial crane operations using a Jetson Nano (Ubuntu), Docker and C++. Integrated HMI Flutter app (via OPC-UA), ERP system (via REST APIs), and crane controller (via MQTT under OPTIMUM framework). Implemented state handling, workplan execution, and heartbeat-based safety checks.
 
----
+
 
 #### OPTIMUM
 
@@ -76,7 +76,7 @@ Developed the firmware for the device using a custom IoT firmware stack, impleme
 
 [OPTIMUM website](https://www.optimum-itea3.eu/) | [Demo video](https://www.youtube.com/watch?v=1g-sNCBvK1o)
 
----
+
 
 #### Deskcenter Software Catalogue
 
@@ -90,7 +90,7 @@ Also contributed to the Angular-based frontend by resolving UI component issues,
 
 [Deskcenter Software Catalogue ](https://www.deskcenter.com/en/software-4/)
 
----
+
 
 #### CULTURATI
 
@@ -103,7 +103,7 @@ Developed software bridge to integrate LoRa-based sensors for visitor presence d
 
 [CULTURATI website](https://culturati.eu/)
 
----
+
 
 ## DevOps Engineer
 
@@ -124,7 +124,7 @@ To reach those goals, I developed:
 - Reduced several common issues by adding automated scripts to fix systemd services, such as the local MongoDB, display and touch screen, or hard disk failures.
 - Documented new infrastructure and supported migration of services for the China region.
 
----
+
 
 ## Lead Software Development Engineer
 
@@ -145,7 +145,7 @@ During my time at IoCare, I developed the following responsibilities:
 - Configured, deployed, and maintained AWS services (IAM, IoT, S3 Buckets, Cognito, Lambda, API Gateway, DynamoDB, and RDS) for global use of IoT devices and a dashboard web application, synchronizing with our requirements of security and performance within the Europe and China regions.
 - Performed the Scrum master role for managing the SW and HW products of the company, covering sprint planning, development, and retrospective reviews.
 
----
+
 
 ## Hardware Development Manager
 
@@ -158,7 +158,7 @@ I led the development, management, and implementation of an energy measurement t
 
 Additionally, I designed and developed IoT devices for diverse clients related to logistics, tourism, and Smart Cities. I also implemented documentation and supervision tools for projects, such as Confluence, Jira, and Bitbucket.
 
----
+
 
 ## R&D Engineer, Innovation and Robotics Department
 
@@ -173,7 +173,7 @@ I carried out regular audits on the production line to ensure consistent quality
 
 Thanks to my broad knowledge of the 3D printing sector and my experience delivering public demonstrations and talks across Spain, I also played an important role in representing the company at major technology fairs. This included designing and delivering presentations, coordinating exhibitions, and engaging with partners and the wider tech community.
 
----
+
 
 ## Expert in Digital and New Technologies
 
@@ -196,7 +196,7 @@ As part of my responsibilities, I had the honor (and occasional challenge) of be
 
 [Twitter: @cir_co_lab](https://twitter.com/cir_co_lab)
 
----
+
 
 ## IT Support Technician
 
@@ -208,11 +208,7 @@ HP (Hewlett-Packard) · Madrid, Spain <br>
 Provided remote support to HP laptop customers by diagnosing and identifying technical issues via email. Assisted clients with step-by-step solutions for software and configuration problems, and coordinated repair logistics for hardware cases, ensuring a smooth process for warranty-covered repairs.
 
 
----
-
 
 ## Reference Letters
 
 Reference letters available upon request via the <a href="/contact/">contact section</a>.
-
----
