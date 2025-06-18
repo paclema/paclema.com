@@ -4,7 +4,9 @@ weight: 2
 breadcrumbs: false
 ---
 
-## Embedded & IoT Systems Engineer
+{{% steps %}}
+
+### Embedded & IoT Systems Engineer
 
 <span style="font-size: 1em; color: #888;">
 IOTIQ GmbH · Leipzig, Germany   <br>
@@ -17,7 +19,7 @@ I participated end-to-end in the architecture, development, prototyping, testing
 
 My role evolved to include project leadership and mentoring, especially in later stages of internal product development for multiple projects such as AccessCtrl and InnoSale.
 
-### Main Responsibilities
+#### Main Responsibilities
 
 - Hardware design (PCB, ESP32/ESP8266, sensors)
 - Firmware development (C/C++, RTOS, MQTT, NFC, BLE)
@@ -27,8 +29,8 @@ My role evolved to include project leadership and mentoring, especially in later
 - Collaboration in multinational R&D consortia
 
 
-### Notable Projects
-#### AccessCtrl
+#### Notable Projects
+##### AccessCtrl
 
 <span style="font-size: 0.9em; color: #888;">
 <em>April 2021 – August 2024</em>
@@ -40,7 +42,7 @@ Designed a custom control board based on ESP32 SoC including power stage, relay-
 
 
 
-#### InnoSale
+##### InnoSale
 
 <span style="font-size: 0.9em; color: #888;">
 <em>November 2021 – August 2024</em>
@@ -54,7 +56,7 @@ Managed technical collaboration across a multinational consortium (Germany, Finl
 
 
 
-#### Light Lifting Equipment Automation
+##### Light Lifting Equipment Automation
 
 <span style="font-size: 0.9em; color: #888;">
 <em>March 2023 – August 2024</em>
@@ -64,7 +66,7 @@ Designed the system logic and communication interfaces to automate industrial cr
 
 
 
-#### OPTIMUM
+##### OPTIMUM
 
 <span style="font-size: 0.9em; color: #888;">
 <em>September 2020 – March 2021</em>
@@ -78,7 +80,7 @@ Developed the firmware for the device using a custom IoT firmware stack, impleme
 
 
 
-#### Deskcenter Software Catalogue
+##### Deskcenter Software Catalogue
 
 <span style="font-size: 0.9em; color: #888;">
 <em>September 2020 – April 2021</em>
@@ -92,7 +94,7 @@ Also contributed to the Angular-based frontend by resolving UI component issues,
 
 
 
-#### CULTURATI
+##### CULTURATI
 
 <span style="font-size: 0.9em; color: #888;">
 <em>February 2023 – August 2024</em>
@@ -105,7 +107,7 @@ Developed software bridge to integrate LoRa-based sensors for visitor presence d
 
 
 
-## DevOps Engineer
+### DevOps Engineer
 
 <span style="font-size: 1em; color: #888;">
 Sensape GmbH · Leipzig, Germany   <br>
@@ -126,7 +128,7 @@ To reach those goals, I developed:
 
 
 
-## Lead Software Development Engineer
+### Lead Software Development Engineer
 
 <span style="font-size: 1em; color: #888;">
 IoCare · Leipzig, Germany   <br>
@@ -147,7 +149,7 @@ During my time at IoCare, I developed the following responsibilities:
 
 
 
-## Hardware Development Manager
+### Hardware Development Manager
 
 <span style="font-size: 1em; color: #888;">
 The Papaya Group · Madrid, Spain   <br>
@@ -160,7 +162,7 @@ Additionally, I designed and developed IoT devices for diverse clients related t
 
 
 
-## R&D Engineer, Innovation and Robotics Department
+### R&D Engineer, Innovation and Robotics Department
 
 <span style="font-size: 1em; color: #888;">
 BQ · Las Rozas de Madrid & Pamplona, Spain   <br>
@@ -175,7 +177,7 @@ Thanks to my broad knowledge of the 3D printing sector and my experience deliver
 
 
 
-## Expert in Digital and New Technologies
+### Expert in Digital and New Technologies
 
 <span style="font-size: 1em; color: #888;">
 bq CIRCOLAB · Spain   <br>
@@ -198,7 +200,7 @@ As part of my responsibilities, I had the honor (and occasional challenge) of be
 
 
 
-## IT Support Technician
+### IT Support Technician
 
 <span style="font-size: 1em; color: #888;">
 HP (Hewlett-Packard) · Madrid, Spain <br>
@@ -207,8 +209,9 @@ HP (Hewlett-Packard) · Madrid, Spain <br>
 
 Provided remote support to HP laptop customers by diagnosing and identifying technical issues via email. Assisted clients with step-by-step solutions for software and configuration problems, and coordinated repair logistics for hardware cases, ensuring a smooth process for warranty-covered repairs.
 
+{{% /steps %}}
 
 
-## Reference Letters
+### Reference Letters
 
 Reference letters available upon request via the <a href="/contact/">contact section</a>.
