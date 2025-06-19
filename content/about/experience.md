@@ -192,11 +192,7 @@ Additionally, I contributed to creating and publishing digital resources and doc
 
 As part of my responsibilities, I had the honor (and occasional challenge) of being the official driver for the Circolab van, crisscrossing Spain on this exciting journey.
 
-[Studio Banana: CIRCOLAB Tech Learning Experience](https://studiobanana.com/work/circolab-tech-learning-experience/)
-
-[CIRCOLAB YouTube Channel](https://www.youtube.com/channel/UCIg6UiZobaCTi8IAtioFV6Q)
-
-[Twitter: @cir_co_lab](https://twitter.com/cir_co_lab)
+[Studio Banana: CIRCOLAB Tech Learning Experience](https://studiobanana.com/work/circolab-tech-learning-experience/) | [CIRCOLAB YouTube Channel](https://www.youtube.com/channel/UCIg6UiZobaCTi8IAtioFV6Q) | [Twitter: @cir_co_lab](https://twitter.com/cir_co_lab)
 
 
 
