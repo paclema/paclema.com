@@ -1,0 +1,21 @@
+name: paclema.com
+
+services:
+
+#   build:
+#     image: hugomods/hugo:latest
+#     container_name: paclema.com_build
+#     volumes:
+#       - ".:/src"
+
+  server:
+    image: hugomods/hugo:latest
+    container_name: paclema.com
+    restart: unless-stopped
+    # command: hugo server --watch --bind 0.0.0.0
+    command: server -D
+    ports:
+      - "1314:1313"
+    volumes:
+      - ".:/src"
+      - ~/hugo_cache:/tmp/hugo_cache
