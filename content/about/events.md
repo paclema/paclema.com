@@ -6,7 +6,7 @@ breadcrumbs: false
 
 ## Participations, Talks & Events
 
-Below is a selection of events, workshops, and talks where I have actively participated as a speaker, workshop leader, collaborator, or guest.
+Below is a selection of events, workshops, and talks where I have actively participated as a speaker, workshop leader, collaborator, or guest. Some of the slides and materials can be found under the repository [paclema/talks](https://github.com/paclema/talks).
 
 
 **19–20 July 2016**  
