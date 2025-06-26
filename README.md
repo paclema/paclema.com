@@ -62,3 +62,13 @@ module:
     - path: github.com/imfing/hextra
 ```
 
+### Setting up with Docker compose within my HomeLab stacks
+
+In one other hand, I have added this repository as a submodule to my stacks repository under the `services` folder with the command:
+
+```bash
+git submodule add https://github.com/paclema/paclema.com.git services/paclemaweb
+git submodule update --init --recursive
+```
+
+Under my stacks repo, I create a new folder `paclema.com` adding the [docker-compose.yml](docker-compose.yml). Note here that it must be changed the volumen path to fit where the submodule source code is located, in that case under the `services/paclemaweb` folder.
