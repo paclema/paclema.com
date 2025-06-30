@@ -1,6 +1,6 @@
 ---
 title: "Events & Talks"
-weight: 4
+weight: 3
 breadcrumbs: false
 ---
 

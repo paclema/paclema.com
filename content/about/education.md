@@ -33,6 +33,46 @@ Collaboration grant from the Physics Department of EUITI. Creation and maintenan
 
 ## Reference Letters
 
-<!-- <span style="font-size: 0.9em; color: #888;"> -->
 Reference letters available upon request via the <a href="/contact/">contact section</a>.
-<!-- </span> -->
+
+<br>
+<br>
+
+## Technical Skills
+### Programming & Scripting
+
+- **C/C++**: Make, CMake
+- **Bash / Shell scripting**
+- **Python**: automation, scripting, backend
+- **JavaScript / TypeScript**: web, Node.js, Angular
+
+### Embedded & Electronics
+
+- PCB design: KiCad
+- Microcontrollers: ESP32, ESP8266, AVR, ARM, Arduino, Realtek Ameba, 
+- Sensors & IoT protocols: MQTT, LoRaWAN, BLE, NFC
+- 3D printing: FreeCAD, AutoDesk Fusion 360, Cura
+
+### DevOps & Cloud
+
+- Docker, Docker Compose
+- CI/CD: Azure Pipelines, GitHub Actions
+- AWS (IAM, IoT, S3, Lambda, API Gateway, DynamoDB, RDS)
+- Data & visualization: InfluxDB, Grafana
+
+### Web & UI
+
+- Angular, HTML5, CSS3
+- FastAPI, REST APIs, OpenAPI, Swagger
+- Processing
+
+### Project Management & Collaboration
+
+- Scrum, Agile methodologies
+- Jira, Confluence, Git, SVN, Gitlab
+
+### Languages
+
+- **Spanish** (native)
+- **English** (fluent)
+- **German** (intermediate)

@@ -9,7 +9,7 @@ breadcrumbs: false
 {{< cards cols="3" >}}
   {{< card 
     link="https://www.reprap.org/wiki/Proyecto_Clone_Wars" 
-    title="RepRap CloneWars (3D Printing)" 
+    title="RepRap - CloneWars" 
     image="https://www.reprap.org/mediawiki/images/1/1f/Clone-Wars-logo.png" 
     subtitle="Early **contributor** to RepRap's **open-source** features in the largest Spanish 3D printing community." 
   >}}
