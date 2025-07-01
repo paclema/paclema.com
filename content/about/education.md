@@ -42,16 +42,18 @@ Reference letters available upon request via the <a href="/contact/">contact sec
 ### Programming & Scripting
 
 - **C/C++**: Make, CMake
-- **Bash / Shell scripting**
-- **Python**: automation, scripting, backend
-- **JavaScript / TypeScript**: web, Node.js, Angular
+- **Bash / Shell scripting**: Linux, windows, macOS
+- **Python**: Flask, FastAPI, automation, server-side applications
+- **JavaScript / TypeScript**: Node.js, Angular
+- **HTML5 / CSS3**: web development
 
 ### Embedded & Electronics
 
 - PCB design: KiCad
-- Microcontrollers: ESP32, ESP8266, AVR, ARM, Arduino, Realtek Ameba, 
-- Sensors & IoT protocols: MQTT, LoRaWAN, BLE, NFC
-- 3D printing: FreeCAD, AutoDesk Fusion 360, Cura
+- Microcontrollers: ESP32, ESP8266, AVR, ARM, Arduino, Realtek Ameba, Raspberry Pi, RTOS
+- Protocols: I2C, SPI, UART, CAN, RS485
+- Sensors & IoT protocols: MQTT, LoRaWAN, BLE, NFC, Zigbee, Modbus, HTTP, WebSockets
+- 3D printing: FreeCAD, AutoDesk Fusion 360, Cura, Slic3r, Marlin
 
 ### DevOps & Cloud
 
