@@ -61,6 +61,10 @@ module:
   imports:
     - path: github.com/imfing/hextra
 ```
+After configuring the modules, update them all with:
+```bash
+hugo mod get -u
+```
 
 ### Setting up with Docker compose within my HomeLab stacks
 
