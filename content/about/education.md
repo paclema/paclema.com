@@ -53,7 +53,7 @@ Reference letters available upon request via the <a href="/contact/">contact sec
 - Microcontrollers: ESP32, ESP8266, AVR, ARM, Arduino, Realtek Ameba, Raspberry Pi, RTOS
 - Protocols: I2C, SPI, UART, CAN, RS485
 - Sensors & IoT protocols: MQTT, LoRaWAN, BLE, NFC, Zigbee, Modbus, HTTP, WebSockets
-- 3D printing: FreeCAD, AutoDesk Fusion 360, Cura, Slic3r, Marlin
+- 3D printing: FreeCAD, AutoDesk Inventor, Cura, Slic3r, Marlin
 
 ### DevOps & Cloud
 
