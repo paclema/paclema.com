@@ -26,7 +26,7 @@ My role evolved to include project leadership and mentoring, especially in later
 - DevOps (CI/CD, Docker, Azure Pipelines)
 - Full-stack development (Angular, FastAPI, Keycloak)
 - Project leadership and mentoring
-- Collaboration in multinational R&D consortia
+- Collaboration in multinational R&D consortia and European-funded innovation projects (ITEA, Horizon Europe)
 
 
 #### Notable Projects
