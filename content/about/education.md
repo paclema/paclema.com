@@ -51,9 +51,10 @@ Reference letters available upon request via the <a href="/contact/">contact sec
 
 - PCB design: KiCad
 - Microcontrollers: ESP32, ESP8266, AVR, ARM, Arduino, Realtek Ameba, Raspberry Pi, RTOS
-- Protocols: I2C, SPI, UART, CAN, RS485
-- Sensors & IoT protocols: MQTT, LoRaWAN, BLE, NFC, Zigbee, Modbus, HTTP, WebSockets
+- Interfaces & Protocols: I2C, SPI, UART, CAN, RS485, USB, Ethernet
+- Sensors & IoT protocols: MQTT, LoRaWAN, BLE, NFC, Zigbee, Modbus, WebSockets, CoAP, HTTP, TCP, UDP, AMQP
 - 3D printing: FreeCAD, AutoDesk Inventor, Cura, Slic3r, Marlin
+- Debugging & testing: JTAG, Osciloscope, logic analyzer
 
 ### DevOps & Cloud
 
