@@ -15,14 +15,14 @@ IOTIQ GmbH · Leipzig, Germany   <br>
 
 At IOTIQ GmbH I worked as an Embedded & IoT Systems Engineer involved in the design and development of hardware, firmware, and integration of smart embedded systems. My work covered both B2B projects for clients (such as DEMAG or Deskcenter) and R&D-driven initiatives under European frameworks (ITEA, Horizon Europe), and also internal product development such as AccessCtrl.
 
-I participated end-to-end in the architecture, development, prototyping, testing, and deployment of embedded solutions, often combining hardware design (PCB), firmware (C/C++, RTOS), and communication stacks (MQTT, Bluetooth, NFC, LoRaWAN). In addition, I was also responsible for DevOps processes (CI/CD, containerization, infrastructure automation) as well as full-stack development where needed, including backend services and Angular-based frontends.
+I participated end-to-end in the architecture, development, prototyping, testing, and deployment of embedded solutions, often combining hardware design (PCB), firmware (C/C++, FreeRTOS), and communication stacks (MQTT, Bluetooth, NFC, LoRaWAN). In addition, I was also responsible for DevOps processes (CI/CD, containerization, infrastructure automation) as well as full-stack development where needed, including backend services and Angular-based frontends.
 
 My role evolved to include project leadership and mentoring, especially in later stages of internal product development for multiple projects such as AccessCtrl and InnoSale.
 
 #### Main Responsibilities
 
 - Hardware design (PCB, ESP32/ESP8266, sensors)
-- Firmware development (C/C++, RTOS, MQTT, NFC, BLE)
+- Firmware development (C/C++, FreeRTOS, MQTT, NFC, BLE)
 - DevOps (CI/CD, Docker, Azure Pipelines)
 - Full-stack development (Angular, FastAPI, Keycloak)
 - Project leadership and mentoring

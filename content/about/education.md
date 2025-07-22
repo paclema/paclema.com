@@ -50,7 +50,7 @@ Reference letters available upon request via the <a href="/contact/">contact sec
 ### Embedded & Electronics
 
 - PCB design: KiCad
-- Microcontrollers: ESP32, ESP8266, AVR, ARM, Arduino, Realtek Ameba, Raspberry Pi, RTOS
+- Microcontrollers: ESP32, ESP8266, AVR, ARM, Arduino, Realtek Ameba, Raspberry Pi, FreeRTOS
 - Interfaces & Bus Systems: I2C, SPI, UART, CAN, RS485, Modbus, USB, Ethernet
 - Communication Protocols: MQTT, LoRaWAN, BLE, NFC, Zigbee, Modbus, WebSockets, CoAP, HTTP, TCP, UDP, AMQP
 - 3D printing: FreeCAD, AutoDesk Inventor, Cura, Slic3r, Marlin
