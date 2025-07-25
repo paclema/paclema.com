@@ -1,4 +1,4 @@
-baseURL: https://example.org/
+baseURL: https://paclema.com/
 languageCode: en-us
 defaultContentLanguage: "en"
 title: paclema
@@ -7,6 +7,9 @@ title: paclema
 module:
   imports:
     - path: github.com/imfing/hextra
+
+# # Parse Git commit
+# enableGitInfo: true
 
 menu:
   main:
@@ -70,7 +73,7 @@ params:
     displayCopyright: true
     displayPoweredBy: true
     width: normal
-    customText: "© 2025 Paclema.com"
+    customText: "© 2025 paclema.com"
   # Display the last modification date
   displayUpdatedDate: true
   dateFormat: "January 2, 2006"
