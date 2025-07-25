@@ -4,9 +4,7 @@ date: 2025-07-25
 lastmod: 2025-07-25
 draft: false
 type: docs
-params:
-  title:
-    hide: true
+titleHide: true    # Oculta el título
 ---
 
 {{< github-readme user="paclema" repo="USBtoUART" >}}
