@@ -2,6 +2,7 @@
 title: "Welcome"
 sidebar:
   open: true
+# layout: single
 ---
 
 <script>

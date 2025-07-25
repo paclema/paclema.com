@@ -1,5 +1,9 @@
 ---
 title: Projects
+date: 2025-07-25
+# toc: false
+sidebar:
+  hide: true
 ---
 
 <div align="center">
@@ -16,9 +20,12 @@ title: Projects
 }
 </style>
 
-
 In the meantime, you are invited to explore my public repositories and ongoing work on GitHub.
 You can find a selection of my open source projects, libraries, and experiments there.
 
 
 [![GitHub](https://img.shields.io/badge/GitHub-@paclema-181717?style=for-the-badge&logo=github)](https://github.com/paclema)
+
+{{< cards >}}
+{{< card link="/projects/usbtouart" title="USBtoUART" subtitle="Custom USB to UART bridge PCB design" image="https://raw.githubusercontent.com/paclema/USBtoUART/master/doc/v1.0/USBtoUART_xray.png" >}}
+{{< /cards >}}
