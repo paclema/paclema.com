@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>USBtoUART 3D Model</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer@3.4.0/dist/model-viewer.min.js"></script>
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: Arial, sans-serif; 
+            background-color: #f8f9fa;
+            overflow: hidden;
+        }
+        model-viewer {
+            width: 100vw;
+            height: 100vh;
+            background-color: #f8f9fa;
+            --poster-color: transparent;
+        }
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #666;
+            font-size: 16px;
+            z-index: 1000;
+        }
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #007bff;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .loaded {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <div>Loading 3D model...</div>
+    </div>
+
+    <model-viewer 
+        id="model"
+        src="USBtoUART.gltf"
+        alt="USBtoUART 3D Model"
+        camera-controls
+        touch-action="pan-y"
+        auto-rotate
+        auto-rotate-delay="3000"
+        rotation-per-second="30deg"
+        environment-image="neutral"
+        shadow-intensity="0.7"
+        exposure="1"
+        camera-orbit="45deg 75deg 0.1m"
+        min-camera-orbit="auto auto 0.1m"
+        max-camera-orbit="auto auto 1m"
+        interaction-policy="always-allow"
+        loading="eager">
+    </model-viewer>
+
+    <script>
+        const modelViewer = document.querySelector('#model');
+        const loading = document.querySelector('#loading');
+        
+        // Ocultar loading cuando el modelo se carga
+        modelViewer.addEventListener('load', () => {
+            console.log('Model loaded successfully');
+            loading.style.display = 'none';
+            modelViewer.style.opacity = '1';
+        });
+        
+        // Mostrar error si no carga
+        modelViewer.addEventListener('error', (event) => {
+            console.error('Error loading model:', event.detail);
+            loading.innerHTML = '<div style="color: #dc3545;">❌ Error loading model</div>';
+        });
+        
+        // Timeout para mostrar error si tarda mucho
+        setTimeout(() => {
+            if (loading.style.display !== 'none') {
+                console.warn('Model taking too long to load');
+                loading.innerHTML = '<div>⏳ Model is taking longer than expected...</div>';
+            }
+        }, 10000);
+        
+        // Asegurar que los controles funcionen en iframe
+        modelViewer.addEventListener('camera-change', () => {
+            // Prevenir scroll del parent
+            document.body.style.overflow = 'hidden';
+        });
+        
+        // Configurar interactividad
+        modelViewer.interactionPolicy = 'always-allow';
+        
+        console.log('Viewer initialized');
+    </script>
+</body>
+</html>
