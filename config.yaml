@@ -8,8 +8,8 @@ module:
   imports:
     - path: github.com/imfing/hextra
 
-# # Parse Git commit
-# enableGitInfo: true
+# Parse Git commit
+enableGitInfo: true
 
 menu:
   main:
