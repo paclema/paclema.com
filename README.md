@@ -9,6 +9,46 @@ Run hugo server with:
 hugo server --buildDrafts --bind "0.0.0.0" --disableFastRender
 ```
 
+## Setting up with Docker compose within my HomeLab stacks
+
+Initially, I added this repository as a submodule to my stacks repository under the `services` folder with the command:
+
+```bash
+git submodule add https://github.com/paclema/paclema.com.git services/paclemaweb
+git submodule update --init --recursive
+```
+
+Under my stacks repo, I create a new folder `paclema.com` adding the [docker-compose.yml](docker-compose.yml). Note here that it must be changed the volumen path to fit where the submodule source code is located, in that case under the `services/paclemaweb` folder.
+
+I encountered some issues with the submodule, so I decided to use the source code as an external repository instead. The problem was that HUgo website could not recognice properly the git info when the repository was added as a submodule, so I had to remove the submodule and use the source code as an external repository. You can find the steps to do that in the [readme](readme.md) file of the `paclemaweb` stack.
+
+
+## Run the stack with Docker Compose:
+Run the following commands to set up the stack:
+```bash
+docker-compose up -d
+```
+
+In case that you want to make a cleanup of Hugo´s cache, you can run the following command:
+```bash
+docker-compose --profile cleanup run --rm cleanup
+```
+This will remove the Hugo cache and temporary files, and if the server is running, it will restart it automatically. But if the server is not running, it will skip the restart and just clean the cache and temporary website files.
+
+And to clean and restart the stack, you can run:
+```bash
+docker-compose down
+docker-compose --profile cleanup run --rm cleanup
+docker-compose up -d
+```
+
+To access the container log, you can run:
+```bash
+docker-compose logs -f server
+```
+
+## Other useful information:
+
 ### To create new hugo site:
 
 ```bash
@@ -66,13 +106,3 @@ After configuring the modules, update them all with:
 hugo mod get -u
 ```
 
-### Setting up with Docker compose within my HomeLab stacks
-
-In one other hand, I have added this repository as a submodule to my stacks repository under the `services` folder with the command:
-
-```bash
-git submodule add https://github.com/paclema/paclema.com.git services/paclemaweb
-git submodule update --init --recursive
-```
-
-Under my stacks repo, I create a new folder `paclema.com` adding the [docker-compose.yml](docker-compose.yml). Note here that it must be changed the volumen path to fit where the submodule source code is located, in that case under the `services/paclemaweb` folder.

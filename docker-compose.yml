@@ -19,3 +19,38 @@ services:
     volumes:
       - ".:/src"
       - ~/hugo_cache:/tmp/hugo_cache
+
+  # Cleanup task to remove Hugo cache and temporary files
+  # This task is run manually to clean up the Hugo cache and temporary files.
+  # If the server is running, it will restart after cleanup. But if the server is not running, it will skip the restart.
+  cleanup:
+    image: docker:cli
+    container_name: paclema.com_dev_cleanup
+    command: |
+      sh -c '
+      echo "🧹 Cleaning all Hugo cache and temporary files..." &&
+      rm -rf /src/public /src/resources /src/.hugo_build.lock &&
+      rm -rf /cache/* &&
+      echo "🔍 Checking if server is running..." &&
+      SERVER_RUNNING=false &&
+      if docker ps --filter "name=paclema.com_dev" --filter "status=running" --format "{{.Names}}" | grep -q paclema.com_dev; then
+        echo "⚠️ Server detected running, will restart after cleanup..." &&
+        SERVER_RUNNING=true
+      else
+        echo "💤 Server not running, skipping restart."
+      fi &&
+      echo "🧹 Running Hugo mod clean..." &&
+      docker run --rm -v /src:/src hugomods/hugo:latest sh -c "cd /src && hugo mod clean" &&
+      if [ "$$SERVER_RUNNING" = "true" ]; then
+        echo "🔄 Restarting Hugo server..." &&
+        docker restart paclema.com_dev &&
+        echo "✅ Server restarted successfully!"
+      fi &&
+      echo "✅ Cleanup complete!"
+      '
+    volumes:
+      - ".:/src"
+      - ~/hugo_cache:/cache
+      - /var/run/docker.sock:/var/run/docker.sock
+    profiles:
+      - cleanup
