@@ -39,54 +39,6 @@ A compact USB-C to UART bridge board based on the Silicon Labs CP2102N chip and 
 - **Auto-Reset Circuit**: Dual MOSFET transistor circuit enables automatic reset of the connected microcontroller during programming
 - **Compact Form Factor**: Optimized 2-layer PCB layout with surface-mount components (0805 package size)
 
-## Pin Configuration
-
-### UART Connector (J3)
-> **Note:** In ESP8266 and ESP32 family chips, their GPIO0 pin is used to control boot mode (e.g., entering flash mode for programming). The labeled GPIO0 pin in this connector is intended to be connected to the target chip's GPIO0 pin to control the boot mode. This usage may not apply to other target chips, so verify your specific hardware requirements.
-> 
-| Pin | Function | Description |
-|-----|----------|-------------|
-| 1   | 3V3      | 3.3V Power Output |
-| 2   | EN       | Enable/Reset |
-| 3   | GPIO0    | Boot mode control |
-| 4   | TXD      | UART Transmit |
-| 5   | RXD      | UART Receive |
-| 6   | GND      | Ground |
-
-### Extended Port Connectors
-- 10-pin male headers providing access to power rails (3.3V, 5V, GND) and CP2102N GPIO signals
-- Enable powering and controlling external circuits directly from the board
-- Compatible with standard breadboard and prototyping setups
-- Standard 2.54mm (0.1") pin spacing
-
-#### PORT1 (J2)
-| Pin | Function | Description |
-|-----|----------|-------------|
-| 1   | GPIO.6   | CP2102N GPIO 6 |
-| 2   | GPIO.0   | CP2102N GPIO 0 |
-| 3   | GPIO.1   | CP2102N GPIO 1 |
-| 4   | GPIO.2   | CP2102N GPIO 2 |
-| 5   | GPIO.3   | CP2102N GPIO 3 |
-| 6   | CHR0     | Battery Charging Detection 0 |
-| 7   | CHR1     | Battery Charging Detection 1 |
-| 8   | CHREN    | Battery Charging Enable |
-| 9   | SUSPEND  | USB Suspend State |
-| 10  | /SUSPEND | USB Suspend State (Inverted) |
-
-#### PORT2 (J4)
-| Pin | Function | Description |
-|-----|----------|-------------|
-| 1   | +5V      | 5V Power Output (from USB connector) |
-| 2   | GPIO.5   | CP2102N GPIO 5 |
-| 3   | GPIO.4   | CP2102N GPIO 4 |
-| 4   | RTS      | Request To Send |
-| 5   | CTS      | Clear To Send |
-| 6   | DSR      | Data Set Ready |
-| 7   | DTR      | Data Terminal Ready |
-| 8   | DCD      | Data Carrier Detect |
-| 9   | CLK      | Clock output |
-| 10  | GND      | Ground |
-
 ## Interactive Bill of Materials 
 <!-- [Open in full screen](/projects/usbtouart/ibom.html) -->
 
@@ -154,6 +106,55 @@ A compact USB-C to UART bridge board based on the Silicon Labs CP2102N chip and 
         height="600px" 
         style="border: 1px solid #ddd; border-radius: 8px;">
 </iframe>
+
+## Detailed Pinout Reference
+
+### UART Connector (J3)
+> **Note:** In ESP8266 and ESP32 family chips, their GPIO0 pin is used to control boot mode (e.g., entering flash mode for programming). The labeled GPIO0 pin in this connector is intended to be connected to the target chip's GPIO0 pin to control the boot mode. This usage may not apply to other target chips, so verify your specific hardware requirements.
+> 
+| Pin | Function | Description |
+|-----|----------|-------------|
+| 1   | 3V3      | 3.3V Power Output |
+| 2   | EN       | Enable/Reset |
+| 3   | GPIO0    | Boot mode control |
+| 4   | TXD      | UART Transmit |
+| 5   | RXD      | UART Receive |
+| 6   | GND      | Ground |
+
+### Extended Port Connectors
+- 10-pin male headers providing access to power rails (3.3V, 5V, GND) and CP2102N GPIO signals
+- Enable powering and controlling external circuits directly from the board
+- Compatible with standard breadboard and prototyping setups
+- Standard 2.54mm (0.1") pin spacing
+
+#### PORT1 (J2)
+| Pin | Function | Description |
+|-----|----------|-------------|
+| 1   | GPIO.6   | CP2102N GPIO 6 |
+| 2   | GPIO.0   | CP2102N GPIO 0 |
+| 3   | GPIO.1   | CP2102N GPIO 1 |
+| 4   | GPIO.2   | CP2102N GPIO 2 |
+| 5   | GPIO.3   | CP2102N GPIO 3 |
+| 6   | CHR0     | Battery Charging Detection 0 |
+| 7   | CHR1     | Battery Charging Detection 1 |
+| 8   | CHREN    | Battery Charging Enable |
+| 9   | SUSPEND  | USB Suspend State |
+| 10  | /SUSPEND | USB Suspend State (Inverted) |
+
+#### PORT2 (J4)
+| Pin | Function | Description |
+|-----|----------|-------------|
+| 1   | +5V      | 5V Power Output (from USB connector) |
+| 2   | GPIO.5   | CP2102N GPIO 5 |
+| 3   | GPIO.4   | CP2102N GPIO 4 |
+| 4   | RTS      | Request To Send |
+| 5   | CTS      | Clear To Send |
+| 6   | DSR      | Data Set Ready |
+| 7   | DTR      | Data Terminal Ready |
+| 8   | DCD      | Data Carrier Detect |
+| 9   | CLK      | Clock output |
+| 10  | GND      | Ground |
+
 
 ---
 
