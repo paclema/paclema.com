@@ -26,25 +26,25 @@ I encountered some issues with the submodule, so I decided to use the source cod
 ## Run the stack with Docker Compose:
 Run the following commands to set up the stack:
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 In case that you want to make a cleanup of Hugo´s cache, you can run the following command:
 ```bash
-docker-compose --profile cleanup run --rm cleanup
+docker compose --profile cleanup run --rm cleanup
 ```
 This will remove the Hugo cache and temporary files, and if the server is running, it will restart it automatically. But if the server is not running, it will skip the restart and just clean the cache and temporary website files.
 
 And to clean and restart the stack, you can run:
 ```bash
-docker-compose down
-docker-compose --profile cleanup run --rm cleanup
-docker-compose up -d
+docker compose down
+docker compose --profile cleanup run --rm cleanup
+docker compose up -d
 ```
 
 To access the container log, you can run:
 ```bash
-docker-compose logs -f server
+docker compose logs -f server
 ```
 
 ## Other useful information:
