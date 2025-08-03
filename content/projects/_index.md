@@ -28,4 +28,5 @@ You can find a selection of my open source projects, libraries, and experiments 
 
 {{< cards >}}
 {{< card link="/projects/usbtouart" title="USBtoUART" subtitle="Custom USB to UART bridge PCB design" image="https://raw.githubusercontent.com/paclema/USBtoUART/master/doc/v1.0/USBtoUART_xray.png" >}}
+{{< card link="/projects/iot-postbox" title="IoT-PostBox" subtitle="Remote mail notifier" image="https://raw.githubusercontent.com/paclema/iot-postbox/refs/heads/master/pcb_desings/iot-postbox_v1/docs/v1.2/iot-postbox_xray.png" >}}
 {{< /cards >}}
