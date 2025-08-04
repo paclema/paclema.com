@@ -1,7 +1,6 @@
 ---
 title: "IoT-PostBox"
-date: 2025-01-08
-# lastmod: 2025-01-08
+date: 2025-08-03
 draft: false
 type: docs
 titleHide: true    # Oculta el título
@@ -70,8 +69,8 @@ Built on the [WebConfigServer](https://github.com/paclema/WebConfigServer) ecosy
 Purpose-built PCBs with integrated battery management, charging systems, and optimized power consumption. Available in two generations:
 
 {{< cards cols="2" >}}
-{{< card link="./v1.x" title="IoT-PostBox v1.x (ESP32-S2)" icon="chip" tag="current">}} 
-{{< card link="./v0.x" title="IoT-PostBox v0.x (ESP8266)" icon="chip" tag="legacy">}} 
+{{< card link="./v1.x" title="IoT-PostBox v1.x (ESP32-S2)" icon="chip" tag="Current" tagType="info">}} 
+{{< card link="./v0.x" title="IoT-PostBox v0.x (ESP8266)" icon="chip" tag="Legacy" tagType="warning">}} 
 {{< /cards >}}
 
 **🔌 Easy Integration**   
