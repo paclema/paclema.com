@@ -27,13 +27,8 @@ You can find a selection of my open source projects, libraries, and experiments 
 [![GitHub](https://img.shields.io/badge/GitHub-@paclema-181717?style=for-the-badge&logo=github)](https://github.com/paclema)
 
 {{< cards >}}
-{{< card link="/projects/usbtouart" title="USBtoUART" subtitle="Custom USB to UART bridge PCB design" image="https://raw.githubusercontent.com/paclema/USBtoUART/master/doc/v1.0/USBtoUART_xray.png" >}}
-{{< card link="/projects/usbtouart" title="USBtoUART" subtitle="Custom USB to UART bridge PCB design" image="/projects/usbtouart/_DSC3896.JPG" >}}
-{{< card link="/projects/usbtouart" title="USBtoUART" subtitle="Custom USB to UART bridge PCB design" image="/projects/usbtouart/USBtoUART.png" >}}
-
-{{< card link="/projects/iot-postbox" title="IoT-PostBox" subtitle="Remote mail notifier" image="https://raw.githubusercontent.com/paclema/iot-postbox/refs/heads/master/pcb_desings/iot-postbox_v1/docs/v1.2/iot-postbox_xray.png" >}}
-{{< card link="/projects/iot-postbox" title="IoT-PostBox" subtitle="Remote mail notifier" image="https://raw.githubusercontent.com/paclema/iot-postbox/refs/heads/master/pcb_desings/iot-postbox_v1/docs/v1.2/iot-postbox_top_xray.png" >}}
-{{< card link="/projects/iot-postbox" title="IoT-PostBox" subtitle="Remote mail notifier" image="https://raw.githubusercontent.com/paclema/iot-postbox/refs/heads/master/pcb_desings/iot-postbox_v1/docs/v1.2/iot-postbox_bottom_xray.png" >}}
+{{< card link="/projects/usbtouart" title="USBtoUART" subtitle="Custom USB to UART bridge" image="/projects/usbtouart/_DSC3896.JPG" >}}
+{{< card link="/projects/iot-postbox" title="IoT-PostBox" subtitle="Remote LoRaWAN mail notifier" image="/projects/iot-postbox/v1.x/_DSC4963.jpg" >}}
 {{< /cards >}}
 
 
