@@ -15,8 +15,8 @@ titleHide: true    # Oculta el título
 **Never miss a delivery again.** Transform your ordinary mailbox into a smart notification system that instantly alerts you when mail arrives or is collected. This battery-powered IoT sensor runs for months on a single charge and seamlessly integrates with your home automation setup.
 
 <p align="center" width="100%">
-  <a href="https://raw.githubusercontent.com/paclema/iot-postbox/master/pcb_desings/iot-postbox_v1/docs/v1.2/iot-postbox_top_xray.png">
-    <img src="https://raw.githubusercontent.com/paclema/iot-postbox/master/pcb_desings/iot-postbox_v1/docs/v1.2/iot-postbox_top_xray.png" alt="IoT-PostBox v1.2" width="600"/>
+  <a href="/projects/iot-postbox/v1.x/_DSC4963.jpg">
+    <img src="/projects/iot-postbox/v1.x/_DSC4963.jpg" alt="IoT-PostBox v1.2" width="600"/>
   </a>
 </p>
 
