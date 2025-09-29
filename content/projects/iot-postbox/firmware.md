@@ -35,11 +35,13 @@ Firstly you need to configure the [WebConfigServer](https://github.com/paclema/W
 3. Using the device FTP server to modify the `config.json` file directly on the device.
 
 **Hardware Setup:**
+
 1. **Power Connection:** Connect USB-Micro-B cable to J4
 2. **Boot Mode:** Hold BOOT button while connecting USB for programming mode or Hold BOOT and press RST to reset if the device is already powered. This is only needed for initial flashing or recovery.
 3. **Driver Installation:** Install ESP32-S2 USB drivers if needed
 
 **Firmware Upload:**
+
 You can use PlatformIO with VSCode or the pio CLI to build and upload the firmware:
 ```bash
 # Build and upload firmware
