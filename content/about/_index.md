@@ -9,8 +9,10 @@ cascade:
   <img src="/about/pablo_iotiq.png" alt="Pablo" style="flex-shrink: 0; max-width: 180px; height: auto; border-radius: 8px; vertical-align: bottom; margin-bottom: 0;">
 
   <div style="flex: 1; min-width: 300px; margin: 0 0 -0.3em 0; padding: 0;">
-    <h3 style="margin: 0 0 0.5em 0; padding: 0;">Pablo Clemente Maseda</h3>
-    <p style="text-align: justify; margin: 0; padding: 0;">Born and raised in Madrid, Pablo studied Industrial Electronics Engineering at Universidad Politécnica de Madrid (UPM). Throughout his career, he has traveled extensively across Spain for work, talks, and workshops in various cities, eventually making Leipzig, Germany his current home since 2017. As an electronics engineer, he channels his passion for open source, hardware, and creative projects into innovative solutions that bridge the digital and physical worlds.</p>
+    <h3 style="margin: 0 0 0.5em 0; padding: 0;"><b>Pa</b>blo <b>Cle</b>mente <b>Ma</b>seda</h3>
+    <p style="text-align: justify; margin: 0; padding: 0;">
+    Born and raised in Madrid, Pablo studied Industrial Electronics Engineering at Universidad Politécnica de Madrid (UPM). Throughout his career, he has traveled extensively across Spain for work, talks, and workshops in various cities, eventually making Leipzig, Germany his current home since 2017. As an electronics engineer, he channels his passion for open source, hardware, and creative projects into innovative solutions that bridge the digital and physical worlds.
+    </p>
   </div>
 </div>
 
