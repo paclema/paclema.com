@@ -9,7 +9,7 @@ breadcrumbs: false
 **Bachelor’s Degree in Industrial Electronics Engineering, Automation & Robotics**  
 _Universidad Politécnica de Madrid (ETSIDI UPM) (Spain)_  
 <span style="font-size: 0.9em; color: #888;">2008 – 2013
-Graduated with Honors (Final Project Distinction)</span>
+Final Degree Project awarded with Honours</span>
 
 ## Scholarships
 
@@ -54,7 +54,7 @@ Reference letters available upon request via the <a href="/contact/">contact sec
 - Interfaces & Bus Systems: I2C, SPI, UART, CAN, RS485, Modbus, USB, Ethernet
 - Communication Protocols: MQTT, LoRaWAN, BLE, NFC, Zigbee, Modbus, WebSockets, CoAP, HTTP, TCP, UDP, AMQP
 - 3D printing: FreeCAD, AutoDesk Inventor, Cura, Slic3r, Marlin
-- Debugging & testing: JTAG, Osciloscope, logic analyzer
+- Debugging & testing: JTAG, Osciloscope, Logic Analyzer
 
 ### DevOps & Cloud
 
@@ -76,6 +76,6 @@ Reference letters available upon request via the <a href="/contact/">contact sec
 
 ### Languages
 
-- **Spanish** (native)
-- **English** (fluent)
-- **German** (intermediate)
+- **Spanish** (Native)
+- **English** (Full Professional Proficiency)
+- **German** (Professional Working Proficiency)
