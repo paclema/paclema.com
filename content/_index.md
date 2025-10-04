@@ -10,5 +10,5 @@ window.location.href = "/about/";
 </script>
 
 <br>
-Hi! I'm Pablo Clemente Maseda (@paclema), a passionate developer, maker, and technology enthusiast.  
+Hi! I'm Pablo Clemente Maseda (@paclema), a passionate engineer, maker, and technology enthusiast.  
 Explore my projects, professional background, and personal interests.
