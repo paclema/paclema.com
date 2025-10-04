@@ -92,3 +92,8 @@ params:
   navbar:
     displayTitle: true
     displayLogo: false
+
+privacy:
+  instagram:
+    disable: false
+    simple: true

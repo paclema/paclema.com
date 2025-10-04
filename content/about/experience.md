@@ -38,8 +38,11 @@ My role evolved to include project leadership and mentoring, especially in later
 
 Designed a custom control board based on ESP32 SoC including power stage, relay-based outputs for electronic/magnetic locks, NFC reader interface, and door state sensing. The board connected via Wi-Fi to a secure backend API, enabling door control via NFC cards/keyfobs or a Flutter-based mobile app via BLE. Designed PCB in KiCad, tested SMD prototypes manually. Also implemented embedded API logic, secure and fast communication (MQTT+WebSockets+SSL), and managed interns for frontend/backend support.
 
-[LinkedIn AccessCtrl post](https://www.linkedin.com/posts/iotiq-gmbh_accessctrl-unser-digitales-zutrittsmanagementsystem-activity-6867110761710268418-qKg9?utm_source=share&utm_medium=member_desktop&rcm=ACoAABOkcXQBXGV1XjMqaRaR42fkofhDVLb4Gek)
+<!-- [LinkedIn AccessCtrl post](https://www.linkedin.com/posts/iotiq-gmbh_accessctrl-unser-digitales-zutrittsmanagementsystem-activity-6867110761710268418-qKg9?utm_source=share&utm_medium=member_desktop&rcm=ACoAABOkcXQBXGV1XjMqaRaR42fkofhDVLb4Gek) -->
 
+<div style="display: flex; justify-content: center; margin: 1em 0;">
+    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6867110731502903296?collapsed=1" height="579" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+</div>
 
 
 ##### InnoSale
@@ -52,8 +55,14 @@ Developed reusable Angular components for a smart quotation tool supporting comp
 
 Managed technical collaboration across a multinational consortium (Germany, Finland, Turkey, and Spain). Responsibilities included setting up and configuring an SVN server for version control, handling on-site consortium meetings, presenting company results, and attending regular progress sessions. Contributed to the architectural design of IOTIQ's development components and prepared derivables required for ITEA reporting.
 
-[InnoSale website](https://www.innosale.eu/)
 
+{{< figure 
+    src="/images/innosale.png" 
+    link="https://www.innosale.eu/"    target="_blank"   
+    alt="InnoSale" 
+    caption="InnoSale — https://www.innosale.eu/"
+    class="experience-webpage-figure"
+>}}
 
 
 ##### Light Lifting Equipment Automation
@@ -76,7 +85,16 @@ Designed and developed a custom embedded hardware sensor device for crane obstac
 
 Developed the firmware for the device using a custom IoT firmware stack, implementing a PID control loop to ensure precise and responsive obstacle detection in real time. Established robust MQTT communication for seamless integration into the OPTIMUM Distributed Control Platform (DCP), ensuring reliable and low-latency data exchange with the rest of the system. Data was visualized using Processing for validation and testing during development.
 
-[OPTIMUM website](https://www.optimum-itea3.eu/) | [Demo video](https://www.youtube.com/watch?v=1g-sNCBvK1o)
+{{< figure 
+    src="/images/optimum.png" 
+    link="https://www.optimum-itea3.eu/" 
+    target="_blank"   
+    alt="OPTIMUM" 
+    caption="OPTIMUM -  https://www.optimum-itea3.eu/"
+    class="experience-webpage-figure"
+>}}
+
+<!-- | [Demo video](https://www.youtube.com/watch?v=1g-sNCBvK1o) -->
 
 
 
@@ -90,8 +108,14 @@ Led the setup and maintenance of the CI/CD infrastructure using Azure Pipelines 
 
 Also contributed to the Angular-based frontend by resolving UI component issues, fixing routing bugs, and developing the visualization of registered machines as interactive nodes—gaining practical experience with the Angular framework and reinforcing the stability and usability of the interface.
 
-[Deskcenter Software Catalogue ](https://www.deskcenter.com/en/software-4/)
-
+{{< figure 
+    src="/images/deskcenter.png" 
+    link="https://www.deskcenter.com/en/software-4" 
+    target="_blank"   
+    alt="Deskcenter Software Catalogue" 
+    caption="Deskcenter Software Catalogue -  https://www.deskcenter.com/en/software-4"
+    class="experience-webpage-figure"
+>}}
 
 
 ##### CULTURATI
@@ -103,9 +127,14 @@ Also contributed to the Angular-based frontend by resolving UI component issues,
 Developed software bridge to integrate LoRa-based sensors for visitor presence detection into CULTURATI’s digital heritage platform. Enabled data ingestion and real-time presence analysis across multiple exhibition areas.
 
 
-[CULTURATI website](https://culturati.eu/)
-
-
+{{< figure 
+    src="/images/culturati.png" 
+    link="https://culturati.eu/" 
+    target="_blank"   
+    alt="CULTURATI" 
+    caption="CULTURATI -  https://culturati.eu/"
+    class="experience-webpage-figure"
+>}}
 
 ### DevOps Engineer
 
@@ -192,9 +221,22 @@ Additionally, I contributed to creating and publishing digital resources and doc
 
 As part of my responsibilities, I had the honor (and occasional challenge) of being the official driver for the Circolab van, crisscrossing Spain on this exciting journey.
 
-[Studio Banana: CIRCOLAB Tech Learning Experience](https://studiobanana.com/work/circolab-tech-learning-experience/) | [CIRCOLAB YouTube Channel](https://www.youtube.com/channel/UCIg6UiZobaCTi8IAtioFV6Q) | [Twitter: @cir_co_lab](https://twitter.com/cir_co_lab)
+<!-- [Studio Banana: CIRCOLAB Tech Learning Experience](https://studiobanana.com/work/circolab-tech-learning-experience/) | [CIRCOLAB YouTube Channel](https://www.youtube.com/channel/UCIg6UiZobaCTi8IAtioFV6Q) | [Twitter: @cir_co_lab](https://twitter.com/cir_co_lab) -->
 
+{{< figure 
+    src="/images/studiobanana.png" 
+    link="https://studiobanana.com/work/circolab-tech-learning-experience/" 
+    target="_blank"   
+    alt="CIRCOLAB" 
+    caption="CIRCOLAB - [Studio Banana: CIRCOLAB Tech Learning Experience](https://studiobanana.com/work/circolab-tech-learning-experience/)"
+    class="experience-webpage-figure"
+>}}
 
+<br>
+{{< youtube h0n4ctsfT9I >}}
+<br>
+{{< instagram BBVFtH3iDcc >}}
+<br>
 
 ### IT Support Technician
 
