@@ -6,16 +6,31 @@ breadcrumbs: false
 
 ## Academic Background
 
-**Bachelor’s Degree in Industrial Electronics Engineering, Automation & Robotics**  
-_Universidad Politécnica de Madrid (ETSIDI UPM) (Spain)_  
-<span style="font-size: 0.9em; color: #888;">2008 – 2013
-Graduated with Honors (Final Project Distinction)</span>
+<div style="display: flex; align-items: center; justify-content: space-between; margin: 0; gap: 2em; flex-wrap: wrap;">
+    <span>
+        <br>
+        <strong>Bachelor’s Degree in Industrial Electronics Engineering, Automation & Robotics</strong><br>
+        <em>Universidad Politécnica de Madrid (ETSIDI UPM) (Spain)</em><br>
+        <span style="font-size: 0.9em; color: #888;">2008 – 2013 Final Degree Project awarded with Honours</span>
+    </span>
+    <a href="https://www.upm.es/" target="_blank">
+        <img src="/about/upm-logo2.png" alt="UPM Logo" style="max-height: 80px; margin:0; min-width: 80px;">
+    </a>
+</div>
 
 ## Scholarships
 
-**EUITI Physics Department Scholarship Holder**  
-_Universidad Politécnica de Madrid (ETSIDI UPM) (Spain)_  
-<span style="font-size: 0.9em; color: #888;">September 2010 – September 2011</span>  
+<div style="display: flex; align-items: center; justify-content: space-between; margin: 0; gap: 16em;">
+    <span>
+        <br>
+        <strong>EUITI Physics Department Scholarship Holder</strong><br>
+        <em>Universidad Politécnica de Madrid (ETSIDI UPM) (Spain)</em><br>
+        <span style="font-size: 0.9em; color: #888;">September 2010 – September 2011</span>
+    </span>
+    <a href="https://www.etsidi.upm.es/" target="_blank">
+        <img src="/about/etsidi-logo.png" alt="UPM Logo" style="max-height: 60px; margin:0; min-width: 80px;">
+    </a>
+</div>
 
 Collaboration grant from the Physics Department of EUITI. Creation and maintenance of a Moodle platform for Physics I and Physics II subjects. Taught some classes during the academic year at the EUITI (University School of Industrial Technical Engineering), UPM University of Madrid.
 
@@ -54,7 +69,7 @@ Reference letters available upon request via the <a href="/contact/">contact sec
 - Interfaces & Bus Systems: I2C, SPI, UART, CAN, RS485, Modbus, USB, Ethernet
 - Communication Protocols: MQTT, LoRaWAN, BLE, NFC, Zigbee, Modbus, WebSockets, CoAP, HTTP, TCP, UDP, AMQP
 - 3D printing: FreeCAD, AutoDesk Inventor, Cura, Slic3r, Marlin
-- Debugging & testing: JTAG, Osciloscope, logic analyzer
+- Debugging & testing: JTAG, Osciloscope, Logic Analyzer
 
 ### DevOps & Cloud
 
@@ -76,6 +91,6 @@ Reference letters available upon request via the <a href="/contact/">contact sec
 
 ### Languages
 
-- **Spanish** (native)
-- **English** (fluent)
-- **German** (intermediate)
+- **Spanish** (Native)
+- **English** (Full Professional Proficiency)
+- **German** (Professional Working Proficiency)
