@@ -28,6 +28,15 @@ Participated in the inauguration exhibition of [_IMPERDIBLE_01_](https://cotec.e
 Delivered the talk "Open Source Designs in the Company".  
 [Meetup event](https://www.meetup.com/es-ES/iotmadrid/events/223671950/)
 
+**9 April 2016**  
+<span style="font-size: 0.95em; color: #888;">Spain</span>  
+Featured in a TV report about the <a href="/about/experience/#expert-in-digital-and-new-technologies"><em>CIRCOLAB project</em></a> on the program "La aventura del saber" broadcast by Spanish National Television (RTVE), appearing from minute 18:34 to minute 34.
+
+<!-- [RTVE Play TV report](https://www.rtve.es/play/videos/la-aventura-del-saber/aventura-del-saber-090316/3516280/?t=18m34s) -->
+
+<div style="width:100%;padding-top:64%;position:relative;border-bottom:1px solid #aaa;display:inline-block;background:#eee;background:rgba(255,255,255,0.9);">    <iframe src="https://secure-embed.rtve.es/drmn/embed/video/3516280/?t=18m34s" name="La aventura del saber - 09/03/16" style="width:100%;height:90%;position:absolute;left:0;top:0;overflow:hidden;border:none;background-color:transparent;" scrolling="no" allowfullscreen="allowfullscreen"></iframe>    <div style="position:absolute;bottom:0;left:0;font-family:arial,helvetica,sans-serif;font-size:12px;line-height:1.833;display:inline-block;padding:5px 0 5px 10px;">        <span style="float:left;margin-right:10px;">        	<img style="height:20px;width:auto;background: transparent;padding:0;margin:0;" src="https://img2.rtve.es/css/rtve.commons/rtve.header.footer/i/logoRTVEes.png" alt="" />        </span>       	<a style="color:#333;font-weight:bold;" title="La aventura del saber - 09/03/16" href="https://www.rtve.es/play/videos/la-aventura-del-saber/aventura-del-saber-090316/3516280/">            <strong>La aventura del saber - 09/03/16</strong>		</a>	</div></div>
+
+
 **9 October 2014**  
 <span style="font-size: 0.95em; color: #888;">Navarra</span>  
 Featured in Spanish national newspaper _El Confidencial_ for the creation of the BQ 3D printer factory.  
