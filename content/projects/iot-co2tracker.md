@@ -185,6 +185,21 @@ The essential hardware components for this project include:
 
 ### 3D Design & Enclosure
 
+> [!NOTE]
+> Explore the 3D model interactively. Use mouse to rotate, zoom and pan. [View Fullscreen 🔍](/projects/iot-co2tracker/viewer.html)
+
+<br>
+
+<iframe src="/projects/iot-co2tracker/viewer.html" 
+        width="100%" 
+        height="600px" 
+        style="border: 1px solid #ddd; border-radius: 8px;">
+</iframe>
+
+The enclosure is designed specifically for the IoT-PostBox v1, SCD30 sensor, 2" TFT display, GPS module, and a 1100mAh LiPo battery. It features precise cutouts for connectors, display, and sensor airflow, as well as rear openings for the LoRa antenna, battery switch, and GPS cable. The parametric FreeCAD model allows quick customization for alternative hardware by modifying spreadsheet parameters. Assembly uses four M3x5mm screws.
+
+Resources:
+
 - FreeCAD sources in [3Ddesigns/](https://github.com/paclema/iot-co2Tracker/tree/HEAD/3Ddesigns)
 - External STL references documented in [3Ddesigns/lib/readme.md](https://github.com/paclema/iot-co2Tracker/blob/HEAD/3Ddesigns/lib/readme.md).
 

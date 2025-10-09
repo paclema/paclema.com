@@ -76,20 +76,20 @@
         const modelViewer = document.querySelector('#model');
         const loading = document.querySelector('#loading');
         
-        // Ocultar loading cuando el modelo se carga
+        // Hide loading when the model finishes loading
         modelViewer.addEventListener('load', () => {
             console.log('Model loaded successfully');
             loading.style.display = 'none';
             modelViewer.style.opacity = '1';
         });
         
-        // Mostrar error si no carga
+        // Show error if the model fails to load
         modelViewer.addEventListener('error', (event) => {
             console.error('Error loading model:', event.detail);
             loading.innerHTML = '<div style="color: #dc3545;">❌ Error loading model</div>';
         });
         
-        // Timeout para mostrar error si tarda mucho
+        // Timeout warning if it takes too long to load
         setTimeout(() => {
             if (loading.style.display !== 'none') {
                 console.warn('Model taking too long to load');
@@ -97,13 +97,13 @@
             }
         }, 10000);
         
-        // Asegurar que los controles funcionen en iframe
+        // Ensure controls work inside an iframe
         modelViewer.addEventListener('camera-change', () => {
-            // Prevenir scroll del parent
+            // Prevent parent page from scrolling
             document.body.style.overflow = 'hidden';
         });
         
-        // Configurar interactividad
+        // Configure interactivity
         modelViewer.interactionPolicy = 'always-allow';
         
         console.log('Viewer initialized');
