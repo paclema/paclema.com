@@ -13,8 +13,7 @@ type: docs
 
 
 <!-- ![IoT-CO2Tracker](/projects/iot-co2tracker/_DSC5898_reduced.png) -->
-
-The IoT-CO2Tracker is a compact device that measures CO₂, temperature, and humidity. Initially developed on an ESP8266, it was later moved to an ESP32 using the IoT-PostBox board. The project also serves to validate the board's capabilities, though that is not its primary purpose.
+The IoT-CO2Tracker is a compact device that measures CO₂, temperature, and humidity. Initially developed on an ESP8266, it was later moved to an ESP32 using the [IoT-PostBox](../iot-postbox/) board. The project also serves to validate the board's capabilities, though that is not its primary purpose.
 
 An external GPS module can be connected via the serial port, allowing the device to publish both sensor readings and location data. This data is sent via LoRaWAN to The Things Network (TTN) for coverage and connectivity analysis, and over Wi‑Fi using MQTT to your own broker. When needed, GPS tracks are logged to the onboard flash storage and can be downloaded for visualization through a built‑in FTP server. The latest hardware revision includes a 2" TFT screen that displays live sensor values, connectivity, and battery status, with a user interface built on LVGL v9 and designed with SquareLine.
 
@@ -177,7 +176,7 @@ time,latitude,longitude,altitude,speed,hdop,satellites,course,vBat,vBus,PowerSta
 ### Main Components
 
 The essential hardware components for this project include:
-- Board: IoT-PostBox (ESP32/ESP32-S2 with onboard RFM95W LoRa module)
+- Board: [IoT-PostBox v1](../iot-postbox/v1.x/) (ESP32/ESP32-S2 with onboard RFM95W LoRa module)
 - Sensor: SCD30 (CO₂, temperature, humidity) over I²C
 - GPS (optional): u-blox M8N or compatible GPS module using serial UART
 - Display (optional): 2.0" GMT020-02 TFT OLED SPI LCD with ST7789V driver
@@ -196,7 +195,7 @@ The essential hardware components for this project include:
         style="border: 1px solid #ddd; border-radius: 8px;">
 </iframe>
 
-The enclosure is designed specifically for the IoT-PostBox v1, SCD30 sensor, 2" TFT display, GPS module, and a 1100mAh LiPo battery. It features precise cutouts for connectors, display, and sensor airflow, as well as rear openings for the LoRa antenna, battery switch, and GPS cable. The parametric FreeCAD model allows quick customization for alternative hardware by modifying spreadsheet parameters. Assembly uses four M3x5mm screws.
+The enclosure is designed specifically for the [IoT-PostBox v1](../iot-postbox/v1.x/), SCD30 sensor, 2" TFT display, GPS module, and a 1100mAh LiPo battery. It features precise cutouts for connectors, display, and sensor airflow, as well as rear openings for the LoRa antenna, battery switch, and GPS cable. The parametric FreeCAD model allows quick customization for alternative hardware by modifying spreadsheet parameters. Assembly uses four M3x5mm screws.
 
 Resources:
 
