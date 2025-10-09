@@ -48,7 +48,7 @@ Collaboration grant from the Physics Department of EUITI. Creation and maintenan
 
 ## Reference Letters
 
-Reference letters available upon request via the <a href="/contact/">contact section</a>.
+Reference letters available upon request via the [contact section](/contact/).
 
 <br>
 <br>

@@ -92,7 +92,7 @@ Delivered the talk _"Developing with Open Source Projects in Private Companies"_
 
 **9 April 2016**  
 <span style="font-size: 0.95em; color: #888;">Spain</span>  
-Featured in a TV report about the <a href="/about/experience/#expert-in-digital-and-new-technologies"><em>CIRCOLAB project</em></a> on the program "La aventura del saber" broadcast by Spanish National Television (RTVE), appearing from minute 18:34 to minute 34.
+Featured in a TV report about the [*CIRCOLAB project*](/about/experience/#expert-in-digital-and-new-technologies) on the program "La aventura del saber" broadcast by Spanish National Television (RTVE), appearing from minute 18:34 to minute 34.
 
 <!-- [RTVE Play TV report](https://www.rtve.es/play/videos/la-aventura-del-saber/aventura-del-saber-090316/3516280/?t=18m34s) -->
 <br>

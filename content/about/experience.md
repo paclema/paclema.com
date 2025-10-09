@@ -313,4 +313,4 @@ Provided remote support to HP laptop customers by diagnosing and identifying tec
 
 ### Reference Letters
 
-Reference letters available upon request via the <a href="/contact/">contact section</a>.
+Reference letters available upon request via the [contact section](/contact/).
