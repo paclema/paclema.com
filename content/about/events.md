@@ -8,6 +8,20 @@ breadcrumbs: false
 
 Below is a selection of events, workshops, and talks where he has actively participated as a speaker, workshop leader, collaborator, or guest. Some of the slides and materials can be found under the repository [paclema/talks](https://github.com/paclema/talks).
 
+
+**9 Feb 2023**  
+<span style="font-size: 0.95em; color: #888;">Basislager Coworking, Leipzig</span>  
+Kicked off the first meeting of the [_The Things Network Leipzig User Group_](https://www.meetup.com/lorawan-leipzig-usergroup/).
+
+{{< cards >}}
+    {{< card
+            link="https://www.meetup.com/lorawan-leipzig-usergroup/events/290836885/?eventOrigin=group_events_list"
+            title="Meetup event"
+            subtitle="Group info and event details"
+            image="/about/events/TTN_Leipzig_meetup.png"
+    >}}
+{{< /cards >}}
+
 **19–20 July 2016**  
 <span style="font-size: 0.95em; color: #888;">Medialab Prado, Madrid</span>  
 Led a Telegram conversational bots workshop covering concepts, API basics, Python examples, and group-built prototypes.
