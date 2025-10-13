@@ -16,7 +16,7 @@ cascade:
   </div>
 </div>
 
-<p style="text-align: justify;">When he's not deep in code or tinkering with circuits, you'll likely find him pushing pedals on his bike, lacing up running shoes, or probably praying not to fall at the climbing hall. He's also constantly exploring new ways to make music and experimenting with his sourdough starter – because apparently, engineering principles apply to bread fermentation too.</p>
+<p style="text-align: justify;">When he's not deep in code or tinkering with circuits, you'll likely find him pushing pedals on his road bike, lacing up running shoes, or probably praying not to fall at the climbing hall. He's also constantly exploring new ways to make music and experimenting with his sourdough starter – because apparently, engineering principles apply to bread fermentation too.</p>
 
 <p style="text-align: justify;">Pablo believes in learning, sharing knowledge, and collaborating with communities worldwide, always with a curious mind and a readiness to tackle the next interesting challenge.</p>
 

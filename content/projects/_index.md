@@ -27,8 +27,9 @@ You can find a selection of my open source projects, libraries, and experiments 
 [![GitHub](https://img.shields.io/badge/GitHub-@paclema-181717?style=for-the-badge&logo=github)](https://github.com/paclema)
 
 {{< cards >}}
-{{< card link="/projects/usbtouart" title="USBtoUART" subtitle="Custom USB to UART bridge" image="/projects/usbtouart/_DSC3896.JPG" >}}
-{{< card link="/projects/iot-postbox" title="IoT-PostBox" subtitle="Remote LoRaWAN mail notifier" image="/projects/iot-postbox/v1.x/_DSC4963.jpg" >}}
+{{< card link="/projects/usbtouart" title="USBtoUART" subtitle="Custom USB to UART Bridge" image="/projects/usbtouart/_DSC3896.JPG" >}}
+{{< card link="/projects/iot-postbox" title="IoT-PostBox" subtitle="Remote LoRaWAN Mail Notifier" image="/projects/iot-postbox/v1.x/_DSC4963.jpg" >}}
+{{< card link="/projects/iot-co2tracker" title="IoT-CO2Tracker" subtitle="Portable Air Quality Tracker" image="/projects/iot-co2tracker/_DSC5898_reduced.PNG" >}}
 {{< /cards >}}
 
 

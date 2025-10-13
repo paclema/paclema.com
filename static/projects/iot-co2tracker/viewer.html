@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IoT-CO2Tracker 3D Model</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer@3.4.0/dist/model-viewer.min.js"></script>
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            background-color: #f8f9fa;
+            overflow: hidden;
+        }
+        model-viewer {
+            width: 100vw;
+            height: 100vh;
+            background-color: #f8f9fa;
+            --poster-color: transparent;
+        }
+        .controls {
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 10px 12px;
+            z-index: 1100;
+            min-width: 260px;
+        }
+        .controls h3 {
+            margin: 0 0 8px 0;
+            font-size: 14px;
+            color: #333;
+            font-weight: 600;
+        }
+        .control-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .control-row label {
+            white-space: nowrap;
+            font-size: 13px;
+            color: #444;
+        }
+        .control-row input[type="range"] {
+            flex: 1;
+        }
+        .control-row .value {
+            width: 36px;
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+            color: #555;
+            font-size: 12px;
+        }
+        .parts-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 12px;
+            margin-top: 6px;
+        }
+        .parts-list label {
+            font-size: 12px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            user-select: none;
+        }
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #666;
+            font-size: 16px;
+            z-index: 1000;
+        }
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #007bff;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .loaded {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <div>Loading 3D model...</div>
+    </div>
+
+    <div class="controls" id="controls">
+        <h3>Display options</h3>
+        <div class="control-row">
+            <label for="alphaSlider">Top transparency:</label>
+            <input id="alphaSlider" type="range" min="0" max="100" step="1" value="0" disabled />
+            <div class="value" id="alphaValue">0%</div>
+        </div>
+        <div style="margin-top:10px; font-size:12px; color:#333; font-weight:600;">
+            Parts visibility
+        </div>
+        <div id="partsList" class="parts-list"></div>
+    </div>
+
+    <model-viewer 
+        id="model"
+        src="co2Tracker_case.gltf"
+        alt="IoT-CO2Tracker 3D Model"
+        camera-controls
+        touch-action="pan-y"
+        auto-rotate
+        auto-rotate-delay="3000"
+        rotation-per-second="30deg"
+        environment-image="neutral"
+        shadow-intensity="0.7"
+        exposure="1"
+        camera-orbit="45deg 65deg auto"
+        min-camera-orbit="auto auto 0.2m"
+        max-camera-orbit="auto auto 2m"
+        interaction-policy="always-allow"
+        loading="eager">
+    </model-viewer>
+
+    <script>
+        const modelViewer = document.querySelector('#model');
+        const loading = document.querySelector('#loading');
+        const alphaSlider = document.querySelector('#alphaSlider');
+        const alphaValue = document.querySelector('#alphaValue');
+        const TARGET_NODE_NAME = 'Top_assembly_with_holes';
+        // Parts and grouped targets
+        const PARTS = [
+            { name: 'iot-postbox_v1_PCB', label: 'Electronics' },
+            { name: 'GMT020-02 Ver:1.1 LCD v005', label: 'LCD' },
+            { name: 'Bot_Buttons_Spacer', label: 'Bot, Buttons & Spacer' },
+        ];
+        const PART_TARGETS = {
+            Electronics: ['iot-postbox_v1_PCB', 'iot-postbox 002'],
+            LCD: ['GMT020-02 Ver:1.1 LCD v005', 'GMT020-02 Ver:1.1 LCD v2', 'GMT020-02 Ver:1.1 LCD v003'],
+            'Bot, Buttons & Spacer': ['Bottom001', 'Bottom_lid&bolt_support', 'Buttons_extender', 'Board_spacer', 'Pad017']
+        };
+        let targetMaterials = [];
+        const materialOriginalAlpha = new WeakMap();
+        const partMaterialsMap = new Map(); // targetName -> Material[]
+        const gltfCache = { json: null, promise: null };
+
+        function applyInitUIState() {
+            if (targetMaterials.length > 0) {
+                alphaSlider.disabled = false;
+                // Apply current slider value immediately
+                const v = parseInt(alphaSlider.value || '0', 10) || 0;
+                setTransparencyFromSlider(v);
+            } else {
+                alphaSlider.disabled = true;
+            }
+        }
+
+        // Spacer transparency slider removed
+
+        function setMaterialsVisibility(materials, visible) {
+            if (!Array.isArray(materials)) return;
+            for (const mat of materials) {
+                try {
+                    const pbr = mat.pbrMetallicRoughness;
+                    if (!pbr) continue;
+                    const base = Array.isArray(pbr.baseColorFactor) ? pbr.baseColorFactor.slice() : [1,1,1,1];
+                    if (!materialOriginalAlpha.has(mat)) materialOriginalAlpha.set(mat, base[3] ?? 1);
+                    const targetAlpha = visible ? (materialOriginalAlpha.get(mat) ?? 1) : 0;
+                    base[3] = targetAlpha;
+                    if (typeof mat.setAlphaMode === 'function') mat.setAlphaMode((targetAlpha < 0.999) ? 'BLEND' : 'OPAQUE');
+                    else mat.alphaMode = (targetAlpha < 0.999) ? 'BLEND' : 'OPAQUE';
+                    if (typeof pbr.setBaseColorFactor === 'function') pbr.setBaseColorFactor(base);
+                    else pbr.baseColorFactor = base;
+                    if ('needsUpdate' in mat) mat.needsUpdate = true;
+                } catch (e) {
+                    console.warn('Could not toggle material visibility:', e);
+                }
+            }
+        }
+
+        function setPartVisibilityByLabel(label, visible) {
+            const targets = PART_TARGETS[label] || [];
+            for (const t of targets) {
+                const mats = partMaterialsMap.get(t);
+                if (Array.isArray(mats) && mats.length > 0) setMaterialsVisibility(mats, visible);
+            }
+        }
+
+        async function buildPartsVisibilityUI() {
+            const container = document.getElementById('partsList');
+            if (!container) return;
+            container.innerHTML = '';
+            for (const part of PARTS) {
+                const name = part.name;
+                const labelText = part.label || name;
+                const id = `part_${name.replace(/[^a-zA-Z0-9_-]/g, '_')}`;
+                const wrapper = document.createElement('label');
+                wrapper.setAttribute('for', id);
+                const cb = document.createElement('input');
+                cb.type = 'checkbox';
+                cb.id = id;
+                const initialChecked = true;
+                cb.checked = initialChecked;
+                cb.disabled = false;
+                cb.addEventListener('change', async () => {
+                    setPartVisibilityByLabel(labelText, cb.checked);
+                });
+                const text = document.createElement('span');
+                text.textContent = labelText;
+                wrapper.appendChild(cb);
+                wrapper.appendChild(text);
+                container.appendChild(wrapper);
+            }
+            // After building, apply current states to ensure UI reflects visibility
+            applyAllPartStates();
+        }
+
+        async function applyAllPartStates() {
+            for (const part of PARTS) {
+                const name = part.name;
+                const labelText = part.label || name;
+                const cbEl = document.getElementById(`part_${name.replace(/[^a-zA-Z0-9_-]/g, '_')}`);
+                const checked = cbEl ? cbEl.checked : true;
+                setPartVisibilityByLabel(labelText, checked);
+            }
+        }
+
+        async function resolveMaterialsForTarget(gltf, targetName) {
+            const model = modelViewer.model;
+            if (!model || !Array.isArray(model.materials)) return [];
+            const nodes = Array.isArray(gltf.nodes) ? gltf.nodes : [];
+            const meshes = Array.isArray(gltf.meshes) ? gltf.meshes : [];
+            const idxs = new Set();
+            // Try node by name (exact or case-insensitive)
+            let nodeIndex = nodes.findIndex(n => n?.name === targetName);
+            if (nodeIndex < 0) nodeIndex = nodes.findIndex(n => String(n?.name||'').toLowerCase() === String(targetName).toLowerCase());
+            if (nodeIndex >= 0) {
+                const stack = [nodeIndex];
+                while (stack.length) {
+                    const i = stack.pop();
+                    const node = nodes[i];
+                    if (!node) continue;
+                    if (typeof node.mesh === 'number') {
+                        const mesh = meshes[node.mesh];
+                        if (mesh && Array.isArray(mesh.primitives)) {
+                            for (const prim of mesh.primitives) if (typeof prim.material === 'number') idxs.add(prim.material);
+                        }
+                    }
+                    if (Array.isArray(node.children)) for (const c of node.children) stack.push(c);
+                }
+            } else {
+                // Try mesh by name (exact or case-insensitive)
+                let meshIndex = meshes.findIndex(m => m?.name === targetName);
+                if (meshIndex < 0) meshIndex = meshes.findIndex(m => String(m?.name||'').toLowerCase() === String(targetName).toLowerCase());
+                if (meshIndex >= 0) {
+                    const mesh = meshes[meshIndex];
+                    if (Array.isArray(mesh.primitives)) {
+                        for (const prim of mesh.primitives) if (typeof prim.material === 'number') idxs.add(prim.material);
+                    }
+                }
+            }
+            const mats = [];
+            for (const mi of idxs) if (model.materials[mi]) mats.push(model.materials[mi]);
+            return Array.from(new Set(mats));
+        }
+        
+        // Hide loading when the model is loaded
+        modelViewer.addEventListener('load', async () => {
+            loading.style.display = 'none';
+            modelViewer.style.opacity = '1';
+            await buildPartsMapFromGLTF();
+            // Resolve Top materials via GLTF mapping and enable slider
+            const gltf = await getGLTFJson();
+            targetMaterials = await resolveMaterialsForTarget(gltf, TARGET_NODE_NAME);
+            applyInitUIState();
+            buildPartsVisibilityUI();
+        });
+        
+        // Interaction policy
+        modelViewer.interactionPolicy = 'always-allow';
+
+        // Stop auto-rotate after first user interaction
+        const stopAutoRotateOnce = () => {
+            try {
+                modelViewer.autoRotate = false;
+                modelViewer.removeAttribute('auto-rotate');
+            } catch {}
+        };
+        modelViewer.addEventListener('pointerdown', stopAutoRotateOnce, { once: true });
+        modelViewer.addEventListener('wheel', stopAutoRotateOnce, { once: true });
+        
+        // Transparency slider handler
+        function setTransparencyFromSlider(value) {
+            const alpha = Math.max(0, Math.min(1, (100 - value) / 100));
+            alphaValue.textContent = `${value}%`;
+            if (!targetMaterials || targetMaterials.length === 0) return;
+            for (const mat of targetMaterials) {
+                try {
+                    const pbr = mat.pbrMetallicRoughness;
+                    if (!pbr) continue;
+                    const base = Array.isArray(pbr.baseColorFactor) ? pbr.baseColorFactor.slice() : [1,1,1,1];
+                    base[3] = alpha;
+                    // Set appropriate alpha mode and force material update
+                    if (typeof mat.setAlphaMode === 'function') mat.setAlphaMode((alpha < 0.999) ? 'BLEND' : 'OPAQUE');
+                    else mat.alphaMode = (alpha < 0.999) ? 'BLEND' : 'OPAQUE';
+                    if (typeof pbr.setBaseColorFactor === 'function') {
+                        pbr.setBaseColorFactor(base);
+                    } else {
+                        pbr.baseColorFactor = base;
+                    }
+                    if ('needsUpdate' in mat) mat.needsUpdate = true;
+                } catch (e) {
+                    console.warn('Could not apply transparency to a material:', e);
+                }
+            }
+        }
+
+        alphaSlider?.addEventListener('input', (e) => {
+            setTransparencyFromSlider(parseInt(e.target.value, 10) || 0);
+        });
+
+        // Spacer transparency slider removed
+
+        // Estado inicial del slider (0% opaco)
+        alphaSlider?.dispatchEvent(new Event('input'));
+        
+        // GLTF helpers for parts mapping
+        function getGLTFJson() {
+            if (gltfCache.json) return Promise.resolve(gltfCache.json);
+            if (!gltfCache.promise) {
+                const srcUrl = modelViewer.getAttribute('src');
+                gltfCache.promise = fetch(srcUrl)
+                    .then(r => r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`)))
+                    .then(j => { gltfCache.json = j; return j; })
+                    .catch(e => { gltfCache.promise = null; throw e; });
+            }
+            return gltfCache.promise;
+        }
+        async function buildPartsMapFromGLTF() {
+            try {
+                const gltf = await getGLTFJson();
+                partMaterialsMap.clear();
+                const targets = new Set();
+                for (const arr of Object.values(PART_TARGETS)) for (const t of arr) targets.add(t);
+                for (const t of targets) {
+                    const mats = await resolveMaterialsForTarget(gltf, t);
+                    if (mats.length > 0) partMaterialsMap.set(t, mats);
+                }
+                // After mapping, apply current states
+                applyAllPartStates();
+            } catch (e) {
+                console.warn('Could not build parts mapping from GLTF:', e);
+            }
+        }
+    </script>
+</body>
+</html>

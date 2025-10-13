@@ -14,7 +14,7 @@ breadcrumbs: false
         <span style="font-size: 0.9em; color: #888;">2008 – 2013 Final Degree Project awarded with Honours</span>
     </span>
     <a href="https://www.upm.es/" target="_blank">
-        <img src="/about/upm-logo2.png" alt="UPM Logo" style="max-height: 80px; margin:0; min-width: 80px;">
+        <img src="/about/education/upm-logo2.png" alt="UPM Logo" style="max-height: 80px; margin:0; min-width: 80px;">
     </a>
 </div>
 
@@ -28,7 +28,7 @@ breadcrumbs: false
         <span style="font-size: 0.9em; color: #888;">September 2010 – September 2011</span>
     </span>
     <a href="https://www.etsidi.upm.es/" target="_blank">
-        <img src="/about/etsidi-logo.png" alt="UPM Logo" style="max-height: 60px; margin:0; min-width: 80px;">
+        <img src="/about/education/etsidi-logo.png" alt="UPM Logo" style="max-height: 60px; margin:0; min-width: 80px;">
     </a>
 </div>
 
@@ -48,7 +48,7 @@ Collaboration grant from the Physics Department of EUITI. Creation and maintenan
 
 ## Reference Letters
 
-Reference letters available upon request via the <a href="/contact/">contact section</a>.
+Reference letters available upon request via the [contact section](/contact/).
 
 <br>
 <br>

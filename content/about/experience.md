@@ -15,8 +15,8 @@ breadcrumbs: false
         <em>September 2020 – August 2024</em>
     </span>
     <a href="https://iotiq.de/" target="_blank" aria-label="IOTIQ website">
-        <img src="/about/iotiq-logo.png" alt="IOTIQ Logo"style="max-height:80px; margin:0;">
-    </a>
+        <img src="/about/experience/iotiq-logo.png" alt="IOTIQ Logo" style="max-height:80px; margin:0; transition:box-shadow 0.3s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.25)';" onmouseout="this.style.boxShadow='none';">
+        </a>
 </div>
 
 At IOTIQ GmbH I worked as an Embedded & IoT Systems Engineer involved in the design and development of hardware, firmware, and integration of smart embedded systems. My work covered both B2B projects for clients (such as DEMAG or Deskcenter) and R&D-driven initiatives under European frameworks (ITEA, Horizon Europe), and also internal product development such as AccessCtrl.
@@ -155,7 +155,7 @@ Developed software bridge to integrate LoRa-based sensors for visitor presence d
         <em>November 2018 – June 2019</em>
     </span>
     <a href="https://www.sensape.com/" target="_blank" aria-label="Sensape website">
-        <img src="/about/sensape-logo.png" alt="Sensape Logo"style="max-height:50px; margin:0;">
+        <img src="/about/experience/sensape-logo.png" alt="Sensape Logo"style="max-height:50px; margin:0; transition:box-shadow 0.3s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.25)';" onmouseout="this.style.boxShadow='none';">
     </a>
 </div>
 
@@ -184,7 +184,7 @@ To reach those goals, I developed:
         <em>July 2017 – December 2018</em>
     </span>
     <a href="https://iocare.de/de/" target="_blank" aria-label="IoCare website">
-        <img src="/about/iocare-logo.png" alt="IOTIQ Logo"style="max-height:80px; margin:0;">
+        <img src="/about/experience/iocare-logo.png" alt="IOTIQ Logo"style="max-height:80px; margin:0; transition:box-shadow 0.3s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.25)';" onmouseout="this.style.boxShadow='none';">
     </a>
 </div>
 
@@ -213,7 +213,7 @@ During my time at IoCare, I developed the following responsibilities:
         <em>September 2016 – April 2017</em>
     </span>
     <a href="https://thepapayagroup.com/" target="_blank" aria-label="The Papaya Group website">
-        <img src="/about/thepapayagroup-logo.png" alt="The Papaya Group Logo"style="max-height:60px; margin:0;">
+        <img src="/about/experience/thepapayagroup-logo.png" alt="The Papaya Group Logo"style="max-height:60px; margin:0;" transition:box-shadow 0.3s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.25)';" onmouseout="this.style.boxShadow='none';">
     </a>
 </div>
 
@@ -234,7 +234,7 @@ Additionally, I designed and developed IoT devices for diverse clients related t
         <em>September 2013 – April 2016</em>
     </span>
     <a href="https://bqeducacion.cc/" target="_blank" aria-label="BQ website">
-        <img src="/about/bq-logo.png" alt="BQ Logo"style="max-height:80px; margin:0;">
+        <img src="/about/experience/bq-logo.png" alt="BQ Logo"style="max-height:80px; margin:0; transition:box-shadow 0.3s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.25)';" onmouseout="this.style.boxShadow='none';">
     </a>
 </div>
 
@@ -252,12 +252,12 @@ Thanks to my broad knowledge of the 3D printing sector and my experience deliver
 
 <div style="display: flex; justify-content: space-between; margin: 0;">
     <span style="font-size: 1em; color: #888;">
-        bq CIRCOLAB · Spain#
+        bq CIRCOLAB · Spain
         <br>
         <em>June 2015 – February 2016</em>
     </span>
     <a href="https://studiobanana.com/es/work/reduciendo-la-brecha-digital-a-traves-de-un-viaje-por-carretera/" target="_blank" aria-label="CIRCOLAB website">
-        <img src="/about/circolab-logo.png" alt="CIRCOLAB Logo"style="max-height:100px; margin:0;">
+        <img src="/about/experience/circolab-logo.png" alt="CIRCOLAB Logo"style="max-height:100px; margin:0; transition:box-shadow 0.3s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.25)';" onmouseout="this.style.boxShadow='none';">
     </a>
 </div>
 
@@ -299,7 +299,7 @@ As part of my responsibilities, I had the honor (and occasional challenge) of be
         <em>June 2008 – September 2008</em>
     </span>
     <a href="https://hp.com/" target="_blank" aria-label="HP website">
-        <img src="/about/hp-logo.png" alt="HP Logo"style="max-height:80px; margin:0;">
+        <img src="/about/experience/hp-logo.png" alt="HP Logo"style="max-height:80px; margin:0; transition:box-shadow 0.3s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.25)';" onmouseout="this.style.boxShadow='none';">
     </a>
 </div>
 
@@ -313,4 +313,4 @@ Provided remote support to HP laptop customers by diagnosing and identifying tec
 
 ### Reference Letters
 
-Reference letters available upon request via the <a href="/contact/">contact section</a>.
+Reference letters available upon request via the [contact section](/contact/).
