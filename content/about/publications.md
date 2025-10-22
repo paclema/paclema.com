@@ -10,7 +10,9 @@ Most of my work is open source, and I have contributed to various projects, libr
 
 - [MQTTClient](https://registry.platformio.org/libraries/paclema/MQTTClient) – A C++ MQTT client library for ESP32 and ESP8266 that transparently wraps ESP-IDF mqtt client component on ESP32 and PubSubClient on ESP8266. Easy to configure with secure connections and WebConfigServer integration.
 - [WebConfigServer](https://registry.platformio.org/libraries/paclema/WebConfigServer) – Arduino-ESP C++ library for ESP8266 and ESP32 that creates a web-based configuration server to manage device settings stored in a config.json file on SPIFFS and display real-time data on a dashboard.
-- [PowerManagement](https://github.com/paclema/PowerManagement) – Arduino-ESP32 C++ library to handle power status based on MCP73831/2, TP4054 and TP4065 battery charger ICs
+- [PowerManagement](https://registry.platformio.org/libraries/paclema/PowerManagement) – Arduino-ESP32 C++ library to handle power status based on MCP73831/2, TP4054 and TP4065 battery charger ICs
+- [LoRaWANClient](https://registry.platformio.org/libraries/paclema/LoRaWANClient) – A C++ library that simplifies LoRaWAN communication by encapsulating the C-based mcci-catena/arduino-lmic library
+- [ESPInsights](https://github.com/paclema/ESPInsights) – A ESP32 C++ library that relays on esp-insights ESP-IDF component to collect and send device telemetry data to a remote server for monitoring and analysis.
 
 ### Services
 - [tuya_powermonitor](https://github.com/paclema/tuya_powermonitor) – Service that reads tuya devices status and save it into an influxdb database.
