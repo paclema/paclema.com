@@ -42,7 +42,7 @@ My role evolved to include project leadership and mentoring, especially in later
 <em>April 2021 – August 2024</em>
 </span>
 
-Designed a custom control board based on ESP32 SoC including power stage, relay-based outputs for electronic/magnetic locks, NFC reader interface, and door state sensing. The board connected via Wi-Fi to a secure backend API, enabling door control via NFC cards/keyfobs or a Flutter-based mobile app via BLE. Designed PCB in KiCad, tested SMD prototypes manually. Also implemented embedded API logic, secure and fast communication (MQTT+WebSockets+SSL), and managed interns for frontend/backend support.
+Designed a custom control board based on ESP32 SoC including power stage, relay-based outputs for electronic/magnetic locks, NFC reader interface, and door state sensing. The board connected via Wi-Fi to a secure backend API, enabling door control via NFC cards/keyfobs or a Flutter-based mobile app via BLE. Designed PCB in KiCad, tested SMD prototypes manually. Also implemented embedded API logic, secure and fast communication (MQTT+WebSockets+SSL), and managed and mentored interns for frontend/backend support.
 
 <!-- [LinkedIn AccessCtrl post](https://www.linkedin.com/posts/iotiq-gmbh_accessctrl-unser-digitales-zutrittsmanagementsystem-activity-6867110761710268418-qKg9?utm_source=share&utm_medium=member_desktop&rcm=ACoAABOkcXQBXGV1XjMqaRaR42fkofhDVLb4Gek) -->
 
