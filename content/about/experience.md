@@ -238,9 +238,9 @@ Additionally, I designed and developed IoT devices for diverse clients related t
     </a>
 </div>
 
-In this role, I was a key contributor in the setup and growth of the company’s manufacturing facility for desktop 3D printers and educational robotics, based in Pamplona. I led prototyping activities across hardware, firmware, and software, conducting feasibility studies and quality assessments for new products.
+In this position, I was a key contributor in the setup and growth of the company’s manufacturing facility for desktop 3D printers and educational robotics, based in Pamplona. I led prototyping activities across hardware, firmware, and software, conducting feasibility studies and quality assessments for new products.
 
-I carried out regular audits on the production line to ensure consistent quality in mass manufacturing, and I was involved in the definition and evaluation of new product lines.
+As an expert in the emerging and democratized 3D printing technology, one of my responsibilities during this time included defining and evaluating new product lines, alongside which I carried out regular audits on the production line to ensure consistent quality in mass manufacturing. Specifically, I was responsible for designing the relevant tests on the assembly line and ensuring production quality by leading the EVT, DVT, and PVT for the flagship products Witbox 1 and Witbox 2. These efforts successfully scaled the production rate up to 25 printers per 8-hour shift, contributing to the Witbox being recognized as one of the top 10 best-rated 3D printers globally in 2014, with over 7,000 units sold annually.
 
 Thanks to my broad knowledge of the 3D printing sector and my experience delivering public demonstrations and talks across Spain, I also played an important role in representing the company at major technology fairs. This included designing and delivering presentations, coordinating exhibitions, and engaging with partners and the wider tech community.
 
