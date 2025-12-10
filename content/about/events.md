@@ -191,7 +191,7 @@ Active participant in _OSHWCon_.
 [OSHWCon 2012 Highlights](https://www.oshwcon.org/actividades-2012)
 
 **18–19 April 2012**  
-<span style="font-size: 0.95em; color: #888;">, Dos Hermanas, Sevilla</span>  
+<span style="font-size: 0.95em; color: #888;">Dos Hermanas, Sevilla</span>  
 Invited to give talks and exhibitions at _Arduino Day 2012 and CloneWars_ at the [_DHInnova - Innovation Hall of Dos Hermanas_](https://www.doshermanas.es/concejalias/promocion-economica-e-innovacion/fomento/innovacion.-dhinnova/).
 
 
