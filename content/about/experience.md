@@ -6,6 +6,47 @@ breadcrumbs: false
 
 {{% steps %}}
 
+### R&D Engineer Embedded/IoT
+
+<div style="display: flex; justify-content: space-between;">
+    <span style="font-size: 1em; color: #888;">
+        nextbike · Leipzig, Germany
+        <br>
+        <em>February 2026 – Present</em>
+    </span>
+    <a href="https://www.nextbike.net/" target="_blank" aria-label="nextbike website">
+        <img src="/about/experience/nextbike-logo.svg" alt="nextbike Logo" style="max-height:40px; max-width:220px; margin:0; transition:box-shadow 0.3s;" onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.25)';" onmouseout="this.style.boxShadow='none';">
+    </a>
+</div>
+
+nextbike is one of Europe's largest bike-sharing operators, headquartered in Leipzig, with over 400 locations in more than 20 countries. I worked on the development of its next-generation e-bike system, which combines a new electric bike with its parking and charging station. Both are driven by IoT devices that integrate their functions with nextbike's remote platform. My work brought together long-term research and concept development for this new system with hands-on hardware engineering to support the production of the electronics used in the current fleet.
+
+#### Research & Technology Scouting
+
+I scouted and evaluated new hardware, wireless standards, on-bike communication buses, power management solutions and firmware frameworks for the new bike and station ecosystem. I turned the most promising options into comparison studies and proofs of concept, such as mesh networking between bikes and stations, and modern firmware architectures. I also kept up with market trends and emerging technologies such as Zephyr RTOS and 10BASE-T1S through trade fairs like Embedded World, hands-on workshops given by semiconductor distributors, and technical sessions with hardware partners.
+
+#### Technical Lead for the Bike-Station IoT & Electronics
+
+Within a dedicated working group for the new e-bike and station model, I was the technical lead for the station's IoT and electronics, from concept to specification. I was the point of contact for potential external partners. Starting from the product requirements, I identified the building blocks to be designed and the ones that first had to be validated through proofs of concept. I then planned the PoC roadmap and started developing the PoCs for the most critical blocks myself.
+
+The role also had a strong management side. I estimated the time and effort for the full development, from PoCs to firmware, and prepared the technical documentation used to request offers from several hardware partners. I also analyzed cost-reduction options and technical alternatives to cut complexity and price, while keeping the focus on a modular system that can be easily configured to the requirements of each tender.
+
+#### Hardware for Production Testers of the Fleet Electronics
+
+I designed the hardware and PCBs of the end-of-line testers that check the internal electronic modules of nextbike's fleet bikes, so that production defects are caught before the parts are shipped on to the bike assembly process. My work covered the electronics that connect each device under test and a dedicated interface board that protects the equipment against faulty units. Across the different types of modules, more than 10,000 units were tested in production with the hardware I designed.
+
+Whenever production issues came up and my teammates were unavailable, such as during the summer holiday period, I readily took ownership. When needed, I travelled to the manufacturer's factory to find the root cause, fix the setup on-site and train the local staff so production could continue. My approach was to deliver a quick, low-cost fix first to keep the line running, followed by a robust permanent hardware revision. I also made the design easy to replicate for other suppliers, documented it, and supported teammates with PCB layouts for their own projects.
+
+#### Beyond Engineering
+
+- Led the Google Workspace to Microsoft 365 migration for the CPTO department as M365 Champion, designing the new folder structure and evaluating the document management strategies to follow.
+- Presented technical solutions and engineering progress to the wider department at the internal Software Engineering Forum.
+- Featured as one of the faces of nextbike's 2026 season opening campaign, shown on citywide posters in Berlin and Leipzig. <span style="font-size: 0.85em; color: #888;">More details under May – June 2026 in [Events & Talks](/about/events/).</span>
+
+<br>
+<br>
+<br>
+
 ### Embedded & IoT Systems Engineer
 
 <div style="display: flex; justify-content: space-between;">
