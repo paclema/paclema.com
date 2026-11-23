@@ -9,6 +9,32 @@ breadcrumbs: false
 Below is a selection of events, workshops, and talks where he has actively participated as a speaker, workshop leader, collaborator, or guest. Some of the slides and materials can be found under the repository [paclema/talks](https://github.com/paclema/talks).
 
 
+**May – June 2026**  
+<span style="font-size: 0.95em; color: #888;">Berlin & Leipzig</span>  
+Featured as one of the faces of [_nextbike_](https://www.nextbike.de/)'s 2026 season opening campaign _"nextbike moves you. Do you feel it too?"_ (_"nextbike bewegt. Fühlst du es auch?"_), taking part in the photo and video shoot. The close-up portraits celebrating the emotions of cycling were displayed on citywide posters in Berlin and Leipzig for four weeks, and projected onto building façades in both cities during a special five-hour event on 6 June.
+
+{{< cards >}}
+    {{< card
+            link="https://www.instagram.com/p/DY2I9EajC6w/"
+            title="Instagram post"
+            subtitle="nextbike bewegt — From Leipzig with love"
+            image="/about/events/nextbike/2026-05-27_14-45-02_UTC_1.jpg"
+    >}}
+    {{< card
+            link="https://www.linkedin.com/pulse/nextbike-insights-more-cities-bikes-impact-nextbikeofficial-hsmlf/"
+            title="nextbike Insights — LinkedIn"
+            subtitle="Campaign launch: “nextbike moves you. Do you feel it too?”"
+            image="/about/events/nextbike/2026-05-27_14-45-02_UTC_2.jpg"
+    >}}
+{{< /cards >}}
+
+<div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;max-width:728px;margin:1rem auto 0;">
+    <img src="/about/events/nextbike/2026-05-27_14-45-02_UTC_3.jpg" alt="nextbike campaign poster" loading="lazy" style="flex:1 1 280px;max-width:356px;width:100%;height:auto;border-radius:8px;">
+    <video controls muted playsinline preload="metadata" poster="/about/events/nextbike/2026-05-27_14-45-02_UTC_6.jpg" style="flex:1 1 280px;max-width:356px;width:100%;height:auto;border-radius:8px;">
+        <source src="/about/events/nextbike/2026-05-27_14-45-02_UTC_6.mp4" type="video/mp4">
+    </video>
+</div>
+
 **9 Feb 2023**  
 <span style="font-size: 0.95em; color: #888;">Basislager Coworking, Leipzig</span>  
 Kicked off the first meeting of the [_The Things Network Leipzig User Group_](https://www.meetup.com/lorawan-leipzig-usergroup/).
