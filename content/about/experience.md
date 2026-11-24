@@ -10,7 +10,7 @@ breadcrumbs: false
 
 <div style="display: flex; justify-content: space-between;">
     <span style="font-size: 1em; color: #888;">
-        nextbike · Leipzig, Germany
+        nextbike GmbH · Leipzig, Germany
         <br>
         <em>February 2026 – Present</em>
     </span>
